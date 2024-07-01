@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfAppAufGabeBestellung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:view="clr-namespace:WpfAppAufGabeBestellung.Views"
+        xmlns:local="clr-namespace:WpfAppAufGabeBestellung"
+        xmlns:viewModels="clr-namespace:WpfAppAufGabeBestellung.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="201*"/>
+        </Grid.RowDefinitions>
+        
+        <ContentControl x:Name="MainControl" Grid.RowSpan="2"/>
+        
+        <Menu Grid.RowSpan="1">
+            <MenuItem Name="Produkts" Header="Produkts" Click="Produkts_Click"/>
+            <MenuItem Name="Bestellung" Header="Bestellung" Click="Bestellung_Click"/>
+        </Menu>
+        
+    </Grid>
+</Window>
