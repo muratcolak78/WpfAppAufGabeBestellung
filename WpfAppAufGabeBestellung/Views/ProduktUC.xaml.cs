@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppAufGabeBestellung.ViewModels;
 
 namespace WpfAppAufGabeBestellung.Views
 {
@@ -22,7 +23,9 @@ namespace WpfAppAufGabeBestellung.Views
     {
         public ProduktUC()
         {
-            InitializeComponent();
-        }
+           InitializeComponent();
+           ListBox.ItemsSource = new ProduktViewModels().Postens;
+                
+         }
     }
 }

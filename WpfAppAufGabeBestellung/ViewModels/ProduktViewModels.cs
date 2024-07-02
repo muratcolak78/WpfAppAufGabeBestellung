@@ -27,6 +27,8 @@ namespace WpfAppAufGabeBestellung.ViewModels
             {
                 bestellung.Postens = value;
                 OnPropertyChanged(nameof(Bestellung));
-            } }
+            } 
+        }
+
     }
 }
